@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/bootstrap.min.css?ver=3.3.6">
+    <link rel="stylesheet" href="https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/main.css?ver=6.6.2">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .navbar {
+            background-color: #000000;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 1.2rem;
+        }
+        .navbar a:hover {
+            background-color: #333333;
+            border-radius: 5px;
+        }
+
+        /* Sección de contacto */
+        #contacto {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        #contacto h2 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+        #contacto p {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 25px;
+        }
+        #contacto form {
+            display: flex;
+            flex-direction: column;
+        }
+        #contacto label {
+            margin-bottom: 5px;
+            color: #000000;
+            font-weight: bold;
+        }
+        #contacto input, #contacto textarea {
+            margin-bottom: 15px;
+            padding: 12px;
+            border: 1px solid #000000;
+            border-radius: 6px;
+            font-size: 1.5rem;
+            transition: border-color 0.3s;
+            color: #000000;
+        }
+        #contacto input:focus, #contacto textarea:focus {
+            border-color: rgb(0, 0, 0);
+            outline: none;
+        }
+        #contacto button {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 253, 253);
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background-color 0.3s;
+        }
+        #contacto button:hover {
+            background-color: #333333;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById("contacto-form");
+
+            form.addEventListener("submit", (event) => {
+                setTimeout(() => {
+                    form.reset(); 
+                    alert("Formulario enviado exitosamente"); 
+                }, 1000); 
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="header" class="header-front-page" style="position: relative; z-index: 2;">
+        <div class="top-header"
+            style="background: rgba(0, 0, 0, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 20px 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-8">
+                        <a href="index.php" title="Molduras Sinú">
+                            <img class="header-logo-img" src="images/Logos/logo.png" width="150" alt="Logo Molduras Sinú" />
+                        </a>
+                    </div>
+                    <div class="col-sm-8 col-xs-4">
+                        <nav class="header-navigation">
+                            <ul id="menu-illdy-main" class="clearfix">
+                                <li id="menu-item-16" class="menu-item">
+                                    <a href="index.php">Inicio</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="open-responsive-menu"><i class="fa fa-bars"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+    <div id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Llena el siguiente formulario y nos pondremos en contacto contigo</p>
+        <form id="contacto-form" action="https://formspree.io/f/mldegnqk" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" name="name" required>
+        
+            <label for="email">Correo electrónico</label>
+            <input type="email" placeholder="Email" name="email" required>
+
+            <label for="phone">Número Celular</label>
+            <input type="phone" placeholder="Teléfono" name="phone" required>
+        
+            <label for="mensaje">Mensaje</label>
+            <textarea placeholder="Mensaje" name="message" required></textarea>
+        
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    </section>
+    <div class="bottom-footer">
+        <div class="container">
+            <p class="copyright">
+                <span class="bottom-copyright">
+                    Molduras Sinú 2024
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

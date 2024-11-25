@@ -1,0 +1,193 @@
+    /* Incluir los archivos CSS con @import */
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/plugins/social-counter/styles/prisna-social-counter.css?ver=6.6.2');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/plugins/kiwi-social-share/assets/vendors/icomoon/style.css?ver=2.1.7');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/pace.min.css?ver=6.6.2');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900,700,300,300italic|Lato:300,400,700,900|Poppins:300,400,500,600,700');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/bootstrap.min.css?ver=3.3.6');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/bootstrap-theme.min.css?ver=3.3.6');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/owl-carousel.min.css?ver=2.0.0');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/main.css?ver=6.6.2');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/layout/css/custom.css?ver=6.6.2');
+@import url('https://149842022.v2.pressablecdn.com/illdy/wp-content/themes/illdy/style.css?ver=1.0.16');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+    /* Estilo del video de fondo */
+    video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(60%);
+        /* Efecto de oscurecimiento */
+    }
+
+    /* Fondo Negro */
+    .top-header {
+        background: rgba(0, 0, 0, 0.7);
+        padding: 15px 0;
+    }
+
+    .header-logo-img {
+        max-width: 140px;
+        transition: transform 0.3s ease;
+    }
+
+    .header-logo-img:hover {
+        transform: scale(1.1);
+        /* Efecto de agrandamiento */
+    }
+
+    /* Menú de navegación */
+    .header-navigation ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    .header-navigation ul li a {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 16px;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+        padding-bottom: 5px;
+        border-bottom: 2px solid transparent;
+    }
+
+    .header-navigation ul li a:hover {
+        color: #FFD700;
+        /* Dorado */
+        border-bottom: 2px solid #FFD700;
+    }
+
+    /* Botones de llamada a la acción en el encabezado */
+    .header-button-one,
+    .header-button-two {
+        display: inline-block;
+        padding: 12px 25px;
+        margin: 10px;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 1.3rem;
+        transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-button-one {
+        background-color: #25D366;
+        /* Verde WhatsApp */
+        color: #000;
+        border: 2px solid transparent;
+    }
+
+    .header-button-one:hover {
+        background-color: transparent;
+        color: #25D366;
+        border: 2px solid #25D366;
+        transform: scale(1.05);
+    }
+
+    .header-button-two {
+        background-color: #FFD700;
+        /* Dorado */
+        color: #000;
+        border: 2px solid transparent;
+    }
+
+    .header-button-two:hover {
+        background-color: transparent;
+        color: #FFD700;
+        border: 2px solid #FFD700;
+        transform: scale(1.05);
+    }
+
+    /* Estilo de texto en el header */
+    .bottom-header h1 {
+        color: #ffffff;
+        font-size: 3.5rem;
+        font-weight: 800;
+        text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+        margin: 20px 0;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .section-description {
+        color: #f0f0f0;
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+        text-align: center;
+        font-style: italic;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .bottom-header h1 {
+            font-size: 2.5rem;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+        }
+
+        .header-button-one,
+        .header-button-two {
+            font-size: 0.9rem;
+            padding: 10px 20px;
+        }
+    }
+
+    .video-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* Ocupa toda la altura de la pantalla */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .content-container {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        max-width: 800px;
+        /* Ajusta el tamaño si es necesario */
+        padding: 20px;
+    }
+
+    .button-container {
+        text-align: center;
+        /* Centra los botones */
+    }
+
+    .header-button-one,
+    .header-button-two {
+        display: inline-block;
+        /* Los botones estarán en una línea */
+        margin: 10px;
+        /* Espaciado entre los botones */
+    }
+    body { font-family: 'Roboto', sans-serif; } h3, h5 { font-family: 'Montserrat', sans-serif; } .section-description, .service-entry { font-family: 'Roboto', sans-serif; }
+    .text-black {
+      color: black;
+  }
